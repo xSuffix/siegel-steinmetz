@@ -1,0 +1,26 @@
+// variables
+$siegel-red: #770019;
+$siegel-lightgray: #D9D9DA;
+$siegel-gray: #AFAFB0;
+
+$light-s2: #3C3C3C;
+
+// styles
+
+.siegel-red {
+  color: $siegel-red !important;
+}
+
+// classes
+
+.text-navigation {
+  color: $siegel-red;
+  font-size: 2rem;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.text-logo {
+  color: $light-s2;
+  font-size: 30px;
+}
