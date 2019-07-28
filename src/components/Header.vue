@@ -2,7 +2,7 @@
 <template>
   <header>
     <Logo />
-    <Navigation />
+    <Navigation class="margin" />
   </header>
 </template>
 
@@ -21,5 +21,9 @@ export default {
 <style lang="scss" scoped>
 header {
   display: flex;
+}
+
+.margin {
+  margin: 0 32px;
 }
 </style>

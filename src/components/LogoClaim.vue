@@ -1,8 +1,10 @@
 <!--The 'Bernd Siegel Steingestaltung' Claim-->
 <template>
   <div class="logo-claim">
-    <span class="text-logo">Bernd</span>
-    <span class="text-logo siegel-red">Siegel</span>
+    <div>
+      <span class="text-logo">Bernd</span>
+      <span class="text-logo siegel-red right">Siegel</span>
+    </div>
     <span class="text-logo">Steingestaltung</span>
   </div>
 </template>
@@ -13,9 +15,10 @@ export default {
 }
 </script>
 
-
 <style lang="scss" scoped>
 .logo-claim {
-
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 </style>

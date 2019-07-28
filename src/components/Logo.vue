@@ -1,6 +1,6 @@
 <template>
   <router-link to="/" class="logo">
-    <img src="@/assets/favicon.svg" />
+    <img src="@/assets/favicon.svg" height="96px" class="margin" />
     <LogoClaim />
   </router-link>
 </template>
@@ -19,5 +19,9 @@ export default {
 .logo {
   display: flex;
   text-decoration: none;
+}
+
+.margin {
+  margin-right: 32px;
 }
 </style>

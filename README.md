@@ -1,8 +1,10 @@
 # siegel-steinmetz
 
 ## Components
-LogoClaim - The 'Bernd Siegel Steingestaltung' Claim
-Navigation - Contains the navigation header
+Header - Contains Logo and Navigation, is rendered independently from pages
+  Logo - Contains the 'Siegel Steinemetz' logo and the claim
+    LogoClaim - The 'Bernd Siegel Steingestaltung' claim
+  Navigation - Main navigation of the page
 
 ## Globals
 src\styles\_global.scss
