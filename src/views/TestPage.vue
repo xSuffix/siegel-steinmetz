@@ -1,7 +1,7 @@
 <!--Page for testing purposes only-->
 <template>
   <div class="test">
-    <img src="@/assets/favicon.svg" height="96px" />
+    <!-- <img src="@/assets/favicon.svg" height="96px" /> -->
     <LogoClaim></LogoClaim>
     <Navigation></Navigation>
 

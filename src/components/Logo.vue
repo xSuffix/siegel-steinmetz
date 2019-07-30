@@ -1,7 +1,7 @@
 <template>
   <router-link to="/" class="logo">
-    <img src="@/assets/favicon.svg" height="96px" class="margin" />
-    <LogoClaim />
+    <img src="@/assets/favicon.svg" height="64px" />
+    <LogoClaim class="claim" />
   </router-link>
 </template>
 
@@ -21,7 +21,13 @@ export default {
   text-decoration: none;
 }
 
-.margin {
-  margin-right: 32px;
+.claim {
+  margin-left: 24px;
+}
+
+@media (max-width: 999px) {
+  .claim {
+    display: none;
+  }
 }
 </style>

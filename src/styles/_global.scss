@@ -6,6 +6,22 @@ $siegel-gray: #AFAFB0;
 $light-s2: #3C3C3C;
 
 // styles
+body {
+  margin: 0;
+}
+
+.document {
+  max-width: 1460px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 16px;
+  padding-right: 16px;
+}
+
+.right {
+  float: right;
+}
+
 .siegel-red {
   color: $siegel-red !important;
 }
@@ -13,16 +29,15 @@ $light-s2: #3C3C3C;
 // classes
 .text-navigation {
   color: $siegel-red;
-  font-size: 2rem;
+  font-size: 1.5rem;
   font-weight: bold;
   text-decoration: none;
-}
-
-.right {
-  float: right;
+  white-space: nowrap;
 }
 
 .text-logo {
   color: $light-s2;
-  font-size: 30px;
+  font-size: 24px;
+  white-space: nowrap;
 }
+

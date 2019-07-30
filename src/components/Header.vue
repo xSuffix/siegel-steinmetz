@@ -1,8 +1,8 @@
 <!--Header for each page, includes logo and navigation-->
 <template>
-  <header>
+  <header class="document">
     <Logo />
-    <Navigation class="margin" />
+    <Navigation />
   </header>
 </template>
 
@@ -21,9 +21,8 @@ export default {
 <style lang="scss" scoped>
 header {
   display: flex;
-}
-
-.margin {
-  margin: 0 32px;
+  justify-content: space-between;
+  margin-top: 32px;
+  
 }
 </style>
