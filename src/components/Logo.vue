@@ -1,14 +1,15 @@
 <template>
   <router-link to="/" class="logo">
-    <img src="@/assets/favicon.svg" height="64px" />
-    <LogoClaim class="claim" />
+    <img src="@/assets/favicon.svg" class="favicon" />
+    <LogoClaim />
   </router-link>
 </template>
 
 <script>
 import LogoClaim from '@/components/LogoClaim.vue'
+
 export default {
-  name: 'logo',
+  name: 'Logo',
   components: {
     LogoClaim
   }
@@ -16,18 +17,15 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+
+
+.favicon {
+  height: 64px;
+}
+
 .logo {
   display: flex;
   text-decoration: none;
-}
-
-.claim {
-  margin-left: 24px;
-}
-
-@media (max-width: 999px) {
-  .claim {
-    display: none;
-  }
+  align-self: center;
 }
 </style>

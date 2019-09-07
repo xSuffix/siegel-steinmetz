@@ -6,8 +6,8 @@ Header - Contains Logo and Navigation, is rendered independently from pages
     LogoClaim - The 'Bernd Siegel Steingestaltung' claim
   Navigation - Main navigation of the page
 
-## Globals
-src\styles\_global.scss
+https://wallhere.com/de/wallpaper/801335
+https://www.google.com/search?q=wallpaper+architecture&rlz=1C1CHBF_deDE856DE856&source=lnms&tbm=isch&sa=X&ved=0ahUKEwjpj-L69d_jAhUMYlAKHWMfCosQ_AUIEigB&biw=1920&bih=979#imgrc=VOMavxIB8RisRM:
 
 ## Project setup
 ```

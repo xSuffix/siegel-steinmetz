@@ -1,7 +1,6 @@
-<!--Privacy policy page - siegel-steinmetz.de/datenschutz-->
 <template>
   <div>
-    
+    about
   </div>
 </template>
 
@@ -11,6 +10,6 @@ export default {
 }
 </script>
 
-<style lang="scss" scoped>
+<style scoped>
 
 </style>

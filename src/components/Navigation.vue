@@ -1,11 +1,11 @@
 <!--Main navigation - Restaurierungen | Grabmale | Über uns | Galerien | Kontakt-->
 <template>
   <span class="navigation">
-    <router-link to="/restaurierungen" class="text-navigation">Restaurierungen</router-link>
-    <router-link to="/grabmale" class="text-navigation">Grabmale</router-link>
-    <router-link to="/ueber-uns" class="text-navigation">Über uns</router-link>
-    <router-link to="/galerie" class="text-navigation">Galerie</router-link>
-    <router-link to="/kontakt" class="text-navigation">Kontakt</router-link>
+    <router-link to="/restaurierungen"><h3>Restaurierungen</h3></router-link>
+    <router-link to="/grabmale"><h3>Grabmale</h3></router-link>
+    <router-link to="/ueber-uns"><h3>Über uns</h3></router-link>
+    <router-link to="/galerie"><h3>Galerie</h3></router-link>
+    <router-link to="/kontakt"><h3>Kontakt</h3></router-link>
   </span>
 </template>
 

@@ -1,36 +1,25 @@
 import Vue from 'vue'
+
 import Router from 'vue-router'
-
-import TestPage from './views/TestPage.vue'
-
-import HomePage from './views/HomePage.vue'
-import RestorationsPage from './views/RestorationsPage.vue'
-import TombsPage from './views/TombsPage.vue'
-import AboutPage from './views/AboutPage.vue'
-import GalleryPage from './views/GalleryPage.vue'
-import ContactPage from './views/ContactPage.vue'
-import ImprintPage from './views/ImprintPage.vue'
-import PrivacyPolicyPage from './views/PrivacyPolicyPage.vue'
+import Home from './views/Home.vue'
+import Restorations from './views/Restorations.vue'
+import Tombs from './views/Tombs.vue'
+import About from './views/About.vue'
+import Gallery from './views/Gallery.vue'
+import Contact from './views/Contact.vue'
+import Imprint from './views/Imprint.vue'
+import PrivacyPolicy from './views/PrivacyPolicy.vue'
 
 Vue.use(Router)
-
 
 const router = new Router({
   mode: 'history',
   base: process.env.BASE_URL,
   routes: [
     {
-      path: '/test',
-      name: 'test',
-      component: TestPage,
-      meta: {
-        title: 'Test'
-      }
-    },
-    {
       path: '/',
       name: 'home',
-      component: HomePage,
+      component: Home,
       meta: {
         title: 'Home - Bernd Siegel Steingestaltung'
       }
@@ -38,7 +27,7 @@ const router = new Router({
     {
       path: '/restaurierungen',
       name: 'restaurierungen',
-      component: RestorationsPage,
+      component: Restorations,
       meta: {
         title: 'Restaurierungen - Bernd Siegel Steingestaltung'
       }
@@ -46,7 +35,7 @@ const router = new Router({
     {
       path: '/grabmale',
       name: 'grabmale',
-      component: TombsPage,
+      component: Tombs,
       meta: {
         title: 'Grabmale - Bernd Siegel Steingestaltung'
       }
@@ -54,7 +43,7 @@ const router = new Router({
     {
       path: '/ueber-uns',
       name: 'ueber-uns',
-      component: AboutPage,
+      component: About,
       meta: {
         title: 'Über uns - Bernd Siegel Steingestaltung'
       }
@@ -62,7 +51,7 @@ const router = new Router({
     {
       path: '/galerie',
       name: 'galerie',
-      component: GalleryPage,
+      component: Gallery,
       meta: {
         title: 'Galerie - Bernd Siegel Steingestaltung'
       }
@@ -70,7 +59,7 @@ const router = new Router({
     {
       path: '/kontakt',
       name: 'kontakt',
-      component: ContactPage,
+      component: Contact,
       meta: {
         title: 'Kontakt - Bernd Siegel Steingestaltung'
       }
@@ -78,7 +67,7 @@ const router = new Router({
     {
       path: '/impressum',
       name: 'impressum',
-      component: ImprintPage,
+      component: Imprint,
       meta: {
         title: 'Impressum - Bernd Siegel Steingestaltung'
       }
@@ -86,11 +75,11 @@ const router = new Router({
     {
       path: '/datenschutz',
       name: 'datenschutz',
-      component: PrivacyPolicyPage,
+      component: PrivacyPolicy,
       meta: {
         title: 'Datenschutzerklärung - Bernd Siegel Steingestaltung'
       }
-    },
+    }
   ]
 })
 

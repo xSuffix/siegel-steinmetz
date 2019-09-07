@@ -1,4 +1,4 @@
-<!--Imprint page - siegel-steinmetz.de/impressum-->
+<!--Photo gallery page - siegel-steinmetz.de/galerie-->
 <template>
   <div>
     
@@ -11,6 +11,6 @@ export default {
 }
 </script>
 
-<style lang="scss" scoped>
+<style scoped>
 
 </style>

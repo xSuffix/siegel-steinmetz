@@ -1,3 +1,4 @@
+<!--Imprint page - siegel-steinmetz.de/impressum-->
 <template>
   <div>
     
@@ -10,6 +11,6 @@ export default {
 }
 </script>
 
-<style lang="scss" scoped>
+<style scoped>
 
 </style>
