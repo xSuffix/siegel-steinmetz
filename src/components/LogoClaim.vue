@@ -25,8 +25,8 @@ export default {
   justify-content: space-between;
 }
 
-@media (max-width: 999px) {
-  .logo-claim {
+@media (max-width: 1023px) {
+  header .logo-claim {
     display: none;
   }
 }

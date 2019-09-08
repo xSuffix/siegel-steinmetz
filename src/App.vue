@@ -1,6 +1,6 @@
 <template>
-  <v-app>
-    <v-app-bar app elevate-on-scroll height="108px">
+  <v-app id="app">
+    <v-app-bar app elevate-on-scroll height="96px">
       <Header />
     </v-app-bar>
     <v-content>
@@ -24,15 +24,31 @@ export default {
 </script>
 
 <style lang="scss">
+.theme--light {
+  background-color: white !important;
+}
+
+.v-toolbar__content {
+  // padding: 0 !important;
+}
+
 $siegel-red: #770019;
 $siegel-lightgray: #D9D9DA;
 $siegel-gray: #AFAFB0;
 
 $light-s2: #3C3C3C;
 
+.bg-lightgray {
+  background-color: $siegel-lightgray;
+}
+
+h1 {
+  color: $light-s2;
+}
+
 h3 {
-  text-decoration: none;
   color: $siegel-red;
+  text-decoration: none;
   font-size: 1.5rem;
   font-weight: bold;
   white-space: nowrap;
@@ -40,8 +56,10 @@ h3 {
 }
 
 p {
+  font-size: 1.1em;
   margin: 0.5em 0;
   line-height: 1.5rem;
+  $light-s2: #3C3C3C;
 }
 
 a {
@@ -58,6 +76,7 @@ br {
   max-width: 1280px;
   margin-left: auto;
   margin-right: auto;
+  padding: 4px 16px;
 }
 
 .text-logo {

@@ -12,7 +12,7 @@
       <strong>
         Zum Grabmalkatalog: 
         <LinkExternal href="https://www.graef-granit.de/content/produkte">
-        Gräf GmbH
+          Gräf GmbH
         </LinkExternal>
       </strong>
     </p>
