@@ -10,7 +10,7 @@
     <!-- <div class="wave">
       <div class="bg-lightgray document mt-12">
         <v-card class="mx-auto" max-width="400px">
-          <v-img height="200px" src="@/assets/img/Restaurierungen.png">
+          <v-img height="200px" src="@/assets/img/Restaurierungen.jpg">
             <v-card-title class="headline align-end fill-height"><b>Restaurierungen</b></v-card-title>
           </v-img>
           
@@ -33,14 +33,14 @@ const tiles = [
   {
     title: "Restaurierungen",
     text: "Unsere Firma hat als Schwerpunkt ihrer Arbeit die kompetente und sachgemäße Restaurierung, Aufbereitung und Pflege von alten Kirchen und Gebäuden sowie Grabmälern, Denkmälern und Bildhauerarbeiten im Programm.",
-    image: "Restaurierungen.png",
+    image: "Restaurierungen.jpg",
     link: "/restaurierungen",
 
   },
   {
     title: "Grabmale",
     text: "Wir gestalten gemeinsam mit Ihnen eine ganz persönliche Erinnerung an Ihren verstorbenen Verwandten, ein individuelles Grabmal. Sie können aus einer Vielfalt an Materialien, Inschriften und Ornamenten wählen.\nHandwerkliche Grabmale werden direkt in Neudenau hergestellt.\nIndustriell hergestellte Steine beziehen wir von unserem Zulieferer.",
-    image: "Grabmale.png",
+    image: "Grabmale.jpg",
     link: "/grabmale",
   }
 ]

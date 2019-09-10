@@ -6,7 +6,6 @@ import Restorations from './views/Restorations.vue'
 import Tombs from './views/Tombs.vue'
 import About from './views/About.vue'
 import Gallery from './views/Gallery.vue'
-import GalleryAlbum from './views/GalleryAlbum.vue'
 import Contact from './views/Contact.vue'
 import Imprint from './views/Imprint.vue'
 import PrivacyPolicy from './views/PrivacyPolicy.vue'
@@ -60,7 +59,7 @@ const router = new Router({
     {
       path: '/galerie/:album',
       name: 'galerie/album',
-      component: GalleryAlbum,
+      component: Gallery,
       meta: {
         title: 'Galerie - Bernd Siegel Steingestaltung'
       }

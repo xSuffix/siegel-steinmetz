@@ -44,6 +44,7 @@ $light-s2: #3C3C3C;
 
 h1 {
   color: $light-s2;
+  margin-bottom: 0.5rem;
 }
 
 h3 {
@@ -52,14 +53,18 @@ h3 {
   font-size: 1.5rem;
   font-weight: bold;
   white-space: nowrap;
-  margin: 0.5em 0;
+  margin: 0.5rem 0;
+  display: inline-block;
 }
 
 p {
-  font-size: 1.1em;
-  margin: 0.5em 0;
+  font-size: 1.1rem;
+  margin: 0 0 0.5rem 0;
   line-height: 1.5rem;
   $light-s2: #3C3C3C;
+
+  // white-space: pre-line;
+
 }
 
 a {
