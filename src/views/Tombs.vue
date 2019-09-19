@@ -1,45 +1,49 @@
 <!--Informational page about tombs - siegel-steinmetz.de/grabmale-->
 <template>
-  <div>
-    <div class="document mt-8">
-      <router-link to="/grabmale"><h3>Grabmale</h3></router-link>
+  <div class="document mb-4">
+    <div class="mt-8">
+      <router-link to="/grabmale"><h1>Grabmale</h1></router-link>
     </div>
-    <TombsOriginal class="document mt-6">
+    <TextImageOriginal class="mt-4">
       <span>
-        <p>Ein Grabmal ist ein sichtbares und individuelles Andenken an einen geliebten Menschen. Die Beschaffenheit des Materials, die Größe, Farbe und Form des Steins, seine Verarbeitung, die enthaltenen Symbole und Inschriften – all das legt Zeugnis ab über das Leben des lieben Verstorbenen und ist uns eine tröstliche Erinnerung und ein Ankerplatz, an dem wir die unauflösliche Verbindung zu ihm spüren dürfen. Das Grabmal drückt Wertschätzung dem Verstorbenen gegenüber aus und ist eine trostreiche Erinnerung.</p>
+        <p>Ein Grabmal ist ein sichtbares und individuelles Andenken an einen geliebten Menschen.<br>Die Beschaffenheit des Materials, die Größe, Farbe und Form des Steins, seine Verarbeitung, die enthaltenen Symbole und Inschriften – all das legt Zeugnis ab über das Leben des lieben Verstorbenen und ist uns eine tröstliche Erinnerung und ein Ankerplatz, an dem wir die unauflösliche Verbindung zu ihm spüren dürfen. Das Grabmal drückt Wertschätzung dem Verstorbenen gegenüber aus und ist eine trostreiche Erinnerung.</p>
         <p>Seit Jahrtausenden werden für Grabmäler grob behauene Steine verwendet. Das robuste, lang haltbare, witterungsbeständige, unvergängliche Naturmaterial symbolisiert die unvergängliche Liebe und Verbundenheit zu einem geliebten Menschen und schmückt die Gräber der Angehörigen.</p>
       </span>
-      <img src="@/assets/img/tombs_1.jpg"/>
-    </TombsOriginal>
-    <TombsOriginal class="document mt-6">
-      <img src="@/assets/img/tombs_2.jpg" height="639px"/>
+      <TileImage image="tombs_1.jpg">
+        <p>Doppelstein Jura mit Bronze</p>
+      </TileImage>
+    </TextImageOriginal>
+    <TextImageOriginal class="document mt-6">
+      <TileImage image="tombs_2.jpg">
+        <p>Doppelgrabmal Tarno Diorit</p>
+      </TileImage>
       <span>
-        <p>Sie kennen Ihren geliebten Verstorbenen am besten. Wir erarbeiten mit Ihnen gemeinsam die ganz persönliche Erinnerung an Ihren verstorbenen Verwandten. Sie haben eine große Auswahl an unterschiedlichen Materialien. Dies beginnt bei der Farbe eines Steins und seiner Größe. Bei den Formen wählen Sie zwischen schmalen Stelen oder großen, beeindruckenden Steinen. Das Grabmal kann fein und glatt bearbeitet sein oder ein grob behauener Stein, eine Bruchraue oder ein Findling. Wir versehen es mit Symbolen, Ornamenten und Verzierungen, die die Persönlichkeit Ihres lieben Angehörigen widerspiegeln. Sehr gerne zeigen wir Ihnen unterschiedliche Ausstellungsstücke und geben Ihnen einen Eindruck der zahlreichen Gestaltungsmöglichkeiten.</p>
+        <p>Sie kennen Ihren geliebten Verstorbenen am besten. Wir erarbeiten mit Ihnen gemeinsam die ganz persönliche Erinnerung an Ihren verstorbenen Verwandten.<br>Sie haben eine große Auswahl an unterschiedlichen Materialien. Dies beginnt bei der Farbe eines Steins und seiner Größe. Bei den Formen wählen Sie zwischen schmalen Stelen oder großen, beeindruckenden Steinen. Das Grabmal kann fein und glatt bearbeitet sein oder ein grob behauener Stein, eine Bruchraue oder ein Findling. Wir versehen es mit Symbolen, Ornamenten und Verzierungen, die die Persönlichkeit Ihres lieben Angehörigen widerspiegeln.<br>Sehr gerne zeigen wir Ihnen unterschiedliche Ausstellungsstücke und geben Ihnen einen Eindruck der zahlreichen Gestaltungsmöglichkeiten.</p>
         <p>Auch die Grabinschrift wird mit Ihnen festgelegt. Sie kann schlicht, klar und edel gestaltet sein oder kunstvoll. Wir fertigen einen Entwurf an und bringen ihn in liebevoller Handarbeit auf das Grabmal auf.</p>
         <p>Grabzubehör wie Grableuchten aus Stahl, Aluminium oder Bronze sowie robuste Pflanzenschalen und wetterfeste Vasen in unterschiedlichen Materialausführungen und Größen komplettiert unser Angebot.</p>
       </span>
-    </TombsOriginal>
-    <TombsOriginal class="document mt-6">
+    </TextImageOriginal>
+    <TextImageOriginal class="document mt-6">
       <span>
         <p>Grabsteine sind im Laufe der Jahre und Jahrzehnte dauerhaft wechselnden Witterungen ausgesetzt. Nässe, Kälte, aber auch Hitze setzen ihnen mit der Zeit zu. Inschriften verblassen, aufgesetzte Buchstaben, Insignien und Ornamente lockern sich und gehen möglicherweise verloren. Wir erneuern die Inschrift des Grabmals Ihrer Lieben. Auch Moos oder Verschmutzung entfernen wir. So wird der Grabstein wieder in den einwandfreien Originalzustand gebracht.</p>
         <p>Bei Beerdigungen bauen wir Grabanlagen ab und nach einer angemessen Zeit detailgenau und liebevoll mit Respekt gegenüber den Verstorbenen wieder auf. Des Weiteren bieten wir Ihnen eine regelmäßige und umfassende Betreuung des Grabmals Ihrer Angehörigen. Hierzu gehört die Reinigung und bei Bedarf die Instandsetzung des Steins. Gerne präsentieren wir Ihnen die unterschiedlichen Möglichkeiten der Wartung.</p>
-        <p>Wir beraten Sie gerne. Einfühlsamkeit, gepaart mit jahrelanger Erfahrung, Fachkönnen und Kompetenz zeichnen uns aus. Bei uns sind Sie in den besten Händen. Rufen Sie uns unter der Tel.-Nr.: <b>06262- 92 64 44</b> an und vereinbaren Sie einen persönlichen, ausführlichen Beratungstermin.</p>
+        <p>Wir beraten Sie gerne. Einfühlsamkeit, gepaart mit jahrelanger Erfahrung, Fachkönnen und Kompetenz zeichnen uns aus. Bei uns sind Sie in den besten Händen.<br>Rufen Sie uns unter der Tel.-Nr.: <b>06262- 92 64 44</b> an und vereinbaren Sie einen persönlichen, ausführlichen Beratungstermin.</p>
       </span>
-      <img src="@/assets/img/tombs_3.jpg"/>
-    </TombsOriginal>
+      <TileImage image="tombs_3.jpg">
+        <p>Urnengrab Kalkstein</p>
+      </TileImage>
+    </TextImageOriginal>
   </div>
 </template>
 
 <script>
-import TombsOriginal from '@/components/Tombs/TombsOriginal.vue'
+import TileImage from '@/components/TileImage.vue'
+import TextImageOriginal from '@/components/TextImageOriginal.vue'
 
 export default {
   components: {
-    TombsOriginal
+    TileImage,
+    TextImageOriginal
   }  
 }
 </script>
-
-<style scoped>
-
-</style>

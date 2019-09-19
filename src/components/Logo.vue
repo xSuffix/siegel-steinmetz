@@ -17,7 +17,9 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-
+.small .favicon {
+  height: 48px;
+}
 
 .favicon {
   height: 64px;

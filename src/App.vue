@@ -1,21 +1,27 @@
 <template>
   <v-app id="app">
-    <v-app-bar app elevate-on-scroll height="96px">
+    <!-- <v-app-bar> -->
       <Header />
-    </v-app-bar>
+      <!-- <HeaderFixed /> -->
+    <!-- </v-app-bar> -->
     <v-content>
       <router-view/>
     </v-content>
+    <Footer />
   </v-app>
 </template>
 
 <script>
 import Header from '@/components/Header.vue'
+import HeaderFixed from '@/components/HeaderFixed.vue'
+import Footer from '@/components/Footer.vue'
 
 export default {
   name: 'App',
   components: {
-    Header
+    Header,
+    HeaderFixed,
+    Footer
   },
   data: () => ({
     //
@@ -28,10 +34,6 @@ export default {
   background-color: white !important;
 }
 
-.v-toolbar__content {
-  // padding: 0 !important;
-}
-
 $siegel-red: #770019;
 $siegel-lightgray: #D9D9DA;
 $siegel-gray: #AFAFB0;
@@ -42,15 +44,21 @@ $light-s2: #3C3C3C;
   background-color: $siegel-lightgray;
 }
 
+.material-icons {
+  margin-right: 4px;
+  vertical-align: middle;
+  color: #3c3c3c;
+}
+
 h1 {
   color: $light-s2;
   margin-bottom: 0.5rem;
 }
 
-h3 {
+h2 {
   color: $siegel-red;
   text-decoration: none;
-  font-size: 1.5rem;
+  font-size: 1.25rem;
   font-weight: bold;
   white-space: nowrap;
   margin: 0.5rem 0;
@@ -62,9 +70,6 @@ p {
   margin: 0 0 0.5rem 0;
   line-height: 1.5rem;
   $light-s2: #3C3C3C;
-
-  // white-space: pre-line;
-
 }
 
 a {
@@ -78,7 +83,7 @@ br {
 
 .document {
   width: 100%;
-  max-width: 1280px;
+  max-width: 1180px;
   margin-left: auto;
   margin-right: auto;
   padding: 4px 16px;

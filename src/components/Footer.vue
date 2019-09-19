@@ -1,0 +1,69 @@
+<template>
+  <div class="footer">
+    <div class="document">
+      <span>
+        <h3>Navigation</h3>
+        <router-link to="/">Startseite</router-link>
+        <router-link to="/restaurierungen">Restaurierungen</router-link>
+        <router-link to="/grabmale">Grabmale</router-link>
+        <router-link to="/ueber-uns">Über uns</router-link>
+        <router-link to="/galerie">Galerie</router-link>
+        <router-link to="/kontakt">Kontakt</router-link>
+      </span>
+      <span>
+        <h3>Weitere Links</h3>
+        <router-link to="/impressum">Impressum</router-link>
+        <router-link to="/datenschutz">Datenschutz</router-link>
+      </span>
+      <span>
+        <h3>Kontakt</h3>
+        <a href="tel:+496264926444" class="link-in"><i class="material-icons">phone</i>06264 / 92 64 44</a>
+        <p>
+          Bernd Siegel
+          <br />Steingestaltung
+        </p>
+        <p>
+        Bahnhofstraße 13
+        <br />74861 Neudenau
+      </p>
+      </span>
+    </div>
+  </div>
+</template>
+
+<script>
+export default {
+  
+}
+</script>
+
+<style scoped>
+.footer {
+  width: 100%;
+  background-color: #1e1e1e;
+  padding: 32px;
+}
+
+.footer div {
+  display: flex;
+  justify-content: space-between;
+}
+
+a {
+  display: block;
+  font-weight: bold;
+  color: #929292 !important;
+  width: max-content;
+}
+
+p, a, i {
+  color: #929292 !important;
+}
+
+h3 {
+  color: #ffffff;
+  border-bottom: 2px solid #770019;
+  margin-bottom: 12px;
+  display: inline-block;
+}
+</style>

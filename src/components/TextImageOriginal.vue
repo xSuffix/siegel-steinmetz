@@ -26,11 +26,7 @@ img {
   max-width: 500px;
 }
 
-span + img {
-  margin-left: 32px;
-}
-
-img + span {
+span + span {
   margin-left: 32px;
 }
 </style>

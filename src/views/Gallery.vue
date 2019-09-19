@@ -2,7 +2,7 @@
 <template>
   <div>
     <div class="mt-8 document">
-      <h1>Galerie</h1>
+      <router-link to="/galerie"><h1>Galerie</h1></router-link>
       <p>Eine kleine Übersicht über unsere bisherigen Leistungen finden Sie hier.</p>
     </div>
     <div class="mt-8 document card-container">
