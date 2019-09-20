@@ -40,6 +40,10 @@ $siegel-gray: #AFAFB0;
 
 $light-s2: #3C3C3C;
 
+.siegel-primary {
+  color: #770019 !important;
+}
+
 .bg-lightgray {
   background-color: $siegel-lightgray;
 }
@@ -53,6 +57,7 @@ $light-s2: #3C3C3C;
 h1 {
   color: $light-s2;
   margin-bottom: 0.5rem;
+  display: inline-block;
 }
 
 h2 {
@@ -94,9 +99,5 @@ br {
   font-size: 24px;
   white-space: nowrap;
   line-height: 1.75rem;
-}
-
-.siegel-red {
-  color: $siegel-red !important;
 }
 </style>

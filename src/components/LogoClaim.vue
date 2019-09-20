@@ -3,7 +3,7 @@
   <div class="logo-claim">
     <div class="claim-top">
       <span>Bernd</span>
-      <span class="siegel-red">Siegel</span>
+      <span class="siegel-primary">Siegel</span>
     </div>
     <span>Steingestaltung</span>
   </div> 

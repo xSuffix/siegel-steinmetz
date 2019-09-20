@@ -1,7 +1,7 @@
 <template>
   <div>
     <div class="mt-8 document">
-      <h1>Über uns</h1>
+      <router-link to="/ueber-uns"><h1>Über uns</h1></router-link>
       <TextImageOriginal class="mt-4">
       <span>
         <p>Sie finden unsere Firma Bernd Siegel Steingestaltung in Neudenau. Nach mehr als 15 Jahren bieten wir Ihnen viel Erfahrung, Fachwissen und Freude an der Kreativität bei der Gestaltung und Bearbeitung des Naturstoffes Stein.</p>

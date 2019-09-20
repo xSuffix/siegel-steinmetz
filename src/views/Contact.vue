@@ -1,10 +1,10 @@
 <template>
   <div class="mt-8 mb-4 document">
     <router-link to="/kontakt">
-      <h2>Kontakt</h2>
+      <h1>Kontakt</h1>
     </router-link>
     <div class="address mb-4">
-      <h3 class="mb-1">Anschrift</h3>
+      <h2 class="mb-1">Anschrift</h2>
       <p>
         Bernd Siegel
         <br />Steingestaltung

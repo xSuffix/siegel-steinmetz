@@ -1,6 +1,6 @@
 <template>
   <div>
-    <h1>Bernd Siegel Steingestaltung</h1>
+    <router-link to="/"><h1>Bernd Siegel Steingestaltung</h1></router-link>
     <p>
       Wir bieten einen umfassenden Service rund um den Naturstoff Stein:
     </p>

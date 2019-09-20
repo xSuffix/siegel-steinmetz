@@ -17,24 +17,30 @@
       </span>
       <span>
         <h3>Kontakt</h3>
-        <a href="tel:+496264926444" class="link-in"><i class="material-icons">phone</i>06264 / 92 64 44</a>
+        <LinkExternal href="tel:+496264926444">
+          <i class="material-icons">phone</i>06264 / 92 64 44
+        </LinkExternal>
         <p>
           Bernd Siegel
           <br />Steingestaltung
         </p>
         <p>
-        Bahnhofstraße 13
-        <br />74861 Neudenau
-      </p>
+          Bahnhofstraße 13
+          <br />74861 Neudenau
+        </p>
       </span>
     </div>
   </div>
 </template>
 
 <script>
+import LinkExternal from "@/components/LinkExternal.vue";
+
 export default {
-  
-}
+  components: {
+    LinkExternal
+  }
+};
 </script>
 
 <style scoped>
@@ -56,7 +62,9 @@ a {
   width: max-content;
 }
 
-p, a, i {
+p,
+a,
+i {
   color: #929292 !important;
 }
 

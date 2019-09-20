@@ -1,11 +1,11 @@
 <!--Main navigation - Restaurierungen | Grabmale | Über uns | Galerien | Kontakt-->
 <template>
   <span class="navigation">
-    <router-link to="/restaurierungen">Restaurierungen</router-link>
-    <router-link to="/grabmale">Grabmale</router-link>
-    <router-link to="/ueber-uns">Über uns</router-link>
-    <router-link to="/galerie">Galerie</router-link>
-    <router-link to="/kontakt">Kontakt</router-link>
+    <router-link class="siegel-primary" to="/restaurierungen">Restaurierungen</router-link>
+    <router-link class="siegel-primary" to="/grabmale">Grabmale</router-link>
+    <router-link class="siegel-primary" to="/ueber-uns">Über uns</router-link>
+    <router-link class="siegel-primary" to="/galerie">Galerie</router-link>
+    <router-link class="siegel-primary" to="/kontakt">Kontakt</router-link>
   </span>
 </template>
 
@@ -35,7 +35,6 @@ export default {
 }
 
 a {
-  color: #770019 !important;
   text-decoration: none;
   font-size: 1.5rem;
   font-weight: bold;
