@@ -1,6 +1,6 @@
 <!--Link navigating to external websites-->
 <template>
-  <a>
+  <a target="_blank">
     <slot/>
   </a>
 </template>
@@ -13,6 +13,6 @@ export default {
 
 <style lang="scss" scoped>
 a {
-  color: #0090CD;
+  color: #1976d2;
 }
 </style>
