@@ -69,7 +69,7 @@ export default {
   },
   methods: {
     handleScroll: function() {
-      console.log(window.scrollY);
+      // console.log(window.scrollY);
       this.scrollY = window.scrollY
     },
     openNavigation: function() {

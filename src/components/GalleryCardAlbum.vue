@@ -1,9 +1,9 @@
 <template>
-  <router-link :to="'/galerie/' + link" class="card">
+  <span>
     <img :src="require(`@/assets/img/${image}`)" width="100%"/>
     <p class="g-title">{{title}}</p>
     <p class="g-amount">{{amount}} Bilder</p>
-  </router-link>
+  </span>
 </template>
 
 <script>
@@ -12,29 +12,29 @@ export default {
   props: {
     title: String,
     image: String,
-    amount: String,
-    link: String
+    amount: Number
   }
 }
 </script>
 
 <style scoped>
-.card {
+span {
   position: relative;
   flex: 0 0 340px;
   width: 340px;
   height: 340px;
   overflow: hidden;
+  cursor: pointer;
   transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1);
   box-shadow: 0px 2px 4px -1px rgba(0, 0, 0, 0.2), 0px 4px 5px 0px rgba(0, 0, 0, 0.14), 0px 1px 10px 0px rgba(0, 0, 0, 0.12);
 }
 
-.card:hover {
+span:hover {
   transform: scale(1.05);
   box-shadow: 0px 11px 15px -7px rgba(0, 0, 0, 0.2), 0px 24px 38px 3px rgba(0, 0, 0, 0.14), 0px 9px 46px 8px rgba(0, 0, 0, 0.12);
 }
 
-.card:before {
+span:before {
   content: '';
   position: absolute;
   z-index: 4;
@@ -47,13 +47,13 @@ export default {
   background: linear-gradient(0deg, #3C3C3C70 0%, rgba(175,175,176,0) 50%);
 }
 
-.card:hover:before {
+span:hover:before {
   width: 100%;
   height: 100%;
   margin: 0;
 }
 
-.card p {
+span p {
   position: absolute;
   z-index: 4;
   bottom: 0;
@@ -71,7 +71,7 @@ export default {
   color: rgb(230, 230, 230);
 }
 
-.card img {
+span img {
   position: absolute;
   user-select: none;
 }

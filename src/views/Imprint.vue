@@ -16,7 +16,7 @@
         </p>
         <p>
           E-Mail:
-          <a href="mailto:siegel.neudenau@t-online.de">siegel.neudenau@t-online.de</a>
+          <a href="mailto:siegel.neudenau@t-online.de" class="siegel-primary">siegel.neudenau@t-online.de</a>
         </p>
         <p>
           Inhaltlich Verantwortlicher gem. § 55 II RStV:

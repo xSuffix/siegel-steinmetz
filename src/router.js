@@ -58,8 +58,27 @@ const router = new Router({
     },
     {
       path: '/galerie/:album',
-      name: 'galerie/album',
+      name: 'album',
       component: Gallery,
+      props: true,
+      meta: {
+        title: 'Galerie - Bernd Siegel Steingestaltung'
+      }
+    },
+    {
+      path: '/galerie/:album/:from',
+      name: 'image',
+      component: Gallery,
+      props: true,
+      meta: {
+        title: 'Galerie - Bernd Siegel Steingestaltung'
+      }
+    },
+    {
+      path: '/galerie/:album/:from/:to',
+      name: 'images',
+      component: Gallery,
+      props: true,
       meta: {
         title: 'Galerie - Bernd Siegel Steingestaltung'
       }
