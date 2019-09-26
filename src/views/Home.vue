@@ -20,7 +20,7 @@
         </figure>
         <p class="mt-4">
           Wir gestalten gemeinsam mit Ihnen eine ganz persönliche Erinnerung an Ihren verstorbenen Verwandten, ein individuelles Grabmal.
-          <br />Sie können aus einer Vielfalt an Materialien, Inschriften und Ornamenten wählen. Handwerkliche Grabmale werden direkt in Neudenau hergestellt.Industriel hergestellte Steine, beziehen wir von unserem Zulieferer
+          <br />Sie können aus einer Vielfalt an Materialien, Inschriften und Ornamenten wählen. Handwerkliche Grabmale werden direkt in Neudenau hergestellt. Industriel hergestellte Steine, beziehen wir von unserem Zulieferer.
         </p>
       </div>
     </Split>
@@ -44,7 +44,7 @@ const tiles = [
   {
     title: "Grabmale",
     text:
-      "Wir gestalten gemeinsam mit Ihnen eine ganz persönliche Erinnerung an Ihren verstorbenen Verwandten, ein individuelles Grabmal. Sie können aus einer Vielfalt an Materialien, Inschriften und Ornamenten wählen.\nHandwerkliche Grabmale werden direkt in Neudenau hergestellt.\nIndustriell hergestellte Steine beziehen wir von unserem Zulieferer.",
+      "Wir gestalten gemeinsam mit Ihnen eine ganz persönliche Erinnerung an Ihren verstorbenen Verwandten, ein individuelles Grabmal. Sie können aus einer Vielfalt an Materialien, Inschriften und Ornamenten wählen.\nHandwerkliche Grabmale werden direkt in Neudenau hergestellt.Industriell hergestellte Steine beziehen wir von unserem Zulieferer.",
     image: "Grabmale.jpg",
     link: "/grabmale"
   }
