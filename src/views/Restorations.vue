@@ -37,11 +37,20 @@
 <script>
 import TitledImage from '@/components/TitledImage.vue'
 import TextImage from '@/components/TextImage.vue'
+import Split from '@/components/Split.vue'
 
 export default {
   components: {
     TitledImage,
-    TextImage
+    TextImage,
+    Split
   }  
 }
 </script>
+
+<style scoped>
+/* .split span {
+  min-width: 50%;
+  flex: 0 1 450px
+} */
+</style>

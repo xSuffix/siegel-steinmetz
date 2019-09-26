@@ -55,6 +55,8 @@ h1 {
   color: $light-s2;
   margin-bottom: 0.5rem;
   display: inline-block;
+  overflow-wrap: break-word;
+  white-space: pre-wrap;
 }
 
 h2 {
@@ -65,6 +67,8 @@ h2 {
   white-space: nowrap;
   margin: 0.5rem 0;
   display: inline-block;
+  overflow-wrap: break-word;
+  white-space: pre-wrap;
 }
 
 p {

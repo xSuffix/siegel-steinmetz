@@ -14,20 +14,23 @@ export default {
 .text-image {
   display: flex;
   justify-content: space-between;
+  flex-wrap: wrap;
 }
 
 .text-image > span {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  max-width: 50%;
+  max-width: 100%;
+  // min-width: 50%;
+  flex: 0 1 450px
 }
 
 img {
+  // display: block;
+  max-height: 375px;
   max-width: 500px;
-}
-
-span + span {
-  margin-left: 32px;
+  // height: auto;
+  // width: auto;
 }
 </style>

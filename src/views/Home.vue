@@ -60,17 +60,25 @@ export default {
 </script>
 
 <style scoped>
+.split {
+  justify-content: space-between;
+}
+
+.split > div {
+  max-width: 450px;
+}
+
 .split > figure + p {
   margin-left: 32px;
 }
 
 .split figure,
 .split p {
-  width: 450px;
+  max-width: 450px;
 }
 
 .split figure {
-  height: 238px;
+  /* max-width: 450px; */
   background-color: #eeeeee;
 }
 

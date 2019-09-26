@@ -1,6 +1,6 @@
 <template>
   <div class="footer">
-    <div class="document">
+    <Split class="document">
       <span>
         <h3>Navigation</h3>
         <router-link to="/">Startseite</router-link>
@@ -29,16 +29,18 @@
           <br />74861 Neudenau
         </p>
       </span>
-    </div>
+    </Split>
   </div>
 </template>
 
 <script>
-import LinkExternal from "@/components/LinkExternal.vue";
+import LinkExternal from '@/components/LinkExternal.vue';
+import Split from '@/components/Split.vue'
 
 export default {
   components: {
-    LinkExternal
+    LinkExternal,
+    Split
   }
 };
 </script>
@@ -47,7 +49,7 @@ export default {
 .footer {
   width: 100%;
   background-color: #eeeeee;
-  padding: 32px;
+  padding: 0 32px;
 }
 
 .footer div {
@@ -68,6 +70,7 @@ i {
 }
 
 h3 {
+  padding-top: 32px;
   color: #3c3c3c;
   border-bottom: 2px solid #770019;
   margin-bottom: 12px;

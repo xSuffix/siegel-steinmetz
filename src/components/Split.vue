@@ -13,9 +13,10 @@ export default {
 <style scoped>
 .split {
   display: flex;
+  flex-wrap: wrap;
 }
 
 .split > * {
-  flex: 0 1 100%;
+  /* flex: 0 1 50%; */
 }
 </style>
