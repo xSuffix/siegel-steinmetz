@@ -1,23 +1,20 @@
 <template>
   <v-app id="app">
-    <!-- <v-app-bar> -->
-      <Header />
-      <!-- <HeaderFixed /> -->
-    <!-- </v-app-bar> -->
+    <Header />
     <v-content>
-      <router-view/>
+      <router-view />
     </v-content>
     <Footer />
   </v-app>
 </template>
 
 <script>
-import Header from '@/components/Header.vue'
-import HeaderFixed from '@/components/HeaderFixed.vue'
-import Footer from '@/components/Footer.vue'
+import Header from "@/components/Header.vue";
+import HeaderFixed from "@/components/HeaderFixed.vue";
+import Footer from "@/components/Footer.vue";
 
 export default {
-  name: 'App',
+  name: "App",
   components: {
     Header,
     HeaderFixed,
@@ -25,7 +22,7 @@ export default {
   },
   data: () => ({
     //
-  }),
+  })
 };
 </script>
 
@@ -35,10 +32,10 @@ export default {
 }
 
 $siegel-red: #770019;
-$siegel-lightgray: #D9D9DA;
-$siegel-gray: #AFAFB0;
+$siegel-lightgray: #d9d9da;
+$siegel-gray: #afafb0;
 
-$light-s2: #3C3C3C;
+$light-s2: #3c3c3c;
 
 .siegel-primary {
   color: #770019 !important;
@@ -63,7 +60,7 @@ h1 {
 h2 {
   color: $siegel-red;
   text-decoration: none;
-  font-size: 1.25rem;
+  font-size: 1.5rem;
   font-weight: bold;
   white-space: nowrap;
   margin: 0.5rem 0;
@@ -74,7 +71,7 @@ p {
   font-size: 1.1rem;
   margin: 0 0 0.5rem 0;
   line-height: 1.5rem;
-  $light-s2: #3C3C3C;
+  color: #646464;
 }
 
 a {

@@ -46,7 +46,7 @@ export default {
 <style scoped>
 .footer {
   width: 100%;
-  background-color: #1e1e1e;
+  background-color: #eeeeee;
   padding: 32px;
 }
 
@@ -58,18 +58,17 @@ export default {
 a {
   display: block;
   font-weight: bold;
-  color: #929292 !important;
   width: max-content;
 }
 
 p,
 a,
 i {
-  color: #929292 !important;
+  color: #757575 !important;
 }
 
 h3 {
-  color: #ffffff;
+  color: #3c3c3c;
   border-bottom: 2px solid #770019;
   margin-bottom: 12px;
   display: inline-block;

@@ -11,14 +11,14 @@
         <p>Des Weiteren bieten wir eine  individuelle Grabmalgestaltung und Grabinschriften nach Ihren Wünschen.</p>
         <p>Wir reinigen Außenfassaden von Gebäuden im Niederdruckstrahlverfahren, vergleichbar dem JOS- oder Nebelstrahlverfahren. In unserem Angebot finden Sie Fensterbänke und Skulpturen aus Stein als auch Natursteinsanierung.</p>
       </span>
-      <TileImage image="about_1.jpg">
+      <TitledImage image="about_1.jpg">
         <p>Betriebsgelände Bernd Siegel</p>
-      </TileImage>
+      </TitledImage>
     </TextImageOriginal>
     <TextImageOriginal class="mt-4">
-      <TileImage image="about_2.jpg">
+      <TitledImage image="about_2.jpg">
         <p>Ausstellungsfläche</p>
-      </TileImage>
+      </TitledImage>
       <span>
         <p>Auf unserer Ausstellungsfläche bieten wir Grabmale in vielfältiger Art und Form aus eigener Produktion, oder zugekauft. Wir beziehen ,unter Anderem, Grabmale der Firma Gräf Granit GmbH aus dem Fichtelgebirge.</p>
         <p>Auf Wunsch verwenden wir auch Steine aus Deutschland. Unser Angebot wird vervollständigt durch Grabzubehör. Wir nehmen auch Grababräumungen vor und  lagern die Grabanlagen für sie bei uns ein.</p>
@@ -31,12 +31,12 @@
 </template>
 
 <script>
-import TileImage from '@/components/TileImage.vue'
+import TitledImage from '@/components/TitledImage.vue'
 import TextImageOriginal from '@/components/TextImageOriginal.vue'
 
 export default {
   components: {
-    TileImage,
+    TitledImage,
     TextImageOriginal
   }
 }

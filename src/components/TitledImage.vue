@@ -1,13 +1,13 @@
 <template>
   <span>
     <img :src="require(`@/assets/img/${image}`)"/>
-    <slot/>
+    <slot />
   </span>
 </template>
 
 <script>
 export default {
-  name: 'TileImage',
+  name: 'TitledImage',
   props: {
     image: String,
     title: String
@@ -16,11 +16,7 @@ export default {
 </script>
 
 <style scoped>
-/* img {
-  max-width: 100%;
+span > p {
+  color: #770019;
 }
-
-span {
-  min-width: 375px;
-} */
 </style>

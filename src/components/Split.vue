@@ -15,7 +15,7 @@ export default {
   display: flex;
 }
 
-.split span {
+.split > * {
   flex: 0 1 100%;
 }
 </style>
