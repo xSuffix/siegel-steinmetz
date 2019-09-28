@@ -57,8 +57,6 @@ export default {
 
 <style scoped>
 .split span {
-  /* width: 450px; */
-  /* max-width: 100%; */
   min-width: 50%;
   flex: 0 1 450px
 }

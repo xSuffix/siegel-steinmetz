@@ -22,15 +22,11 @@ export default {
   flex-direction: column;
   justify-content: center;
   max-width: 100%;
-  // min-width: 50%;
   flex: 0 1 450px
 }
 
 img {
-  // display: block;
   max-height: 375px;
   max-width: 500px;
-  // height: auto;
-  // width: auto;
 }
 </style>

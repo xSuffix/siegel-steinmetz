@@ -53,7 +53,7 @@ span:hover:before {
   margin: 0;
 }
 
-span p {
+p {
   position: absolute;
   z-index: 4;
   bottom: 0;
@@ -71,7 +71,7 @@ span p {
   color: rgb(230, 230, 230);
 }
 
-span img {
+img {
   position: absolute;
   user-select: none;
 }

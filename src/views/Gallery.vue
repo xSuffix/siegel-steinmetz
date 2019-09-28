@@ -7,9 +7,27 @@
       </router-link>
       <p>Eine kleine Übersicht über unsere bisherigen Leistungen finden Sie hier.</p>
     </div>
-    <section class="mt-8 document">
-      <div class="card-container">
-        <GalleryCardAlbum
+    <section class="document">
+      <ul class="card-container">
+        <GalleryAlbumCard
+          @click.native="loadAlbum(albums[0])"
+          title="Grabmal-Lager"
+          image="gallery_1.jpg"
+          :amount="albums[0].images.length"
+        />
+        <GalleryAlbumCard
+          @click.native="loadAlbum(albums[1])"
+          title="Grabmalreferenzen"
+          image="gallery_2.jpg"
+          :amount="albums[1].images.length"
+        />
+        <GalleryAlbumCard
+          @click.native="loadAlbum(albums[2])"
+          title="Restaurierungen"
+          image="gallery_3.jpg"
+          :amount="albums[2].images.length"
+        />
+        <!-- <GalleryCardAlbum
           @click.native="loadAlbum(albums[0])"
           title="Grabmal-Lager"
           image="gallery_1.jpg"
@@ -26,8 +44,8 @@
           title="Restaurierungen"
           image="gallery_3.jpg"
           :amount="albums[2].images.length"
-        />
-      </div>
+        /> -->
+      </ul>
 
       <div v-if="this.loadedAlbum != null" class="mt-8 image-container">
         <span
@@ -45,6 +63,7 @@
 
 <script>
 import GalleryCardAlbum from "@/components/GalleryCardAlbum.vue";
+import GalleryAlbumCard from "@/components/GalleryAlbumCard.vue";
 import { isUndefined } from "util";
 
 function importAll(r) {
@@ -102,7 +121,6 @@ export default {
     return {
       albums: albums,
       loadedAlbum: null
-      // pageSize: 12
     };
   },
   props: {
@@ -115,7 +133,8 @@ export default {
     }
   },
   components: {
-    GalleryCardAlbum
+    GalleryCardAlbum,
+    GalleryAlbumCard
   },
   computed: {
     // shownImages: function() {
@@ -171,9 +190,29 @@ export default {
 </script>
 
 <style scoped>
+section {
+  position: relative;
+}
+
+.v-application ul {
+  padding: initial;
+}
+
 .card-container {
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-around;
+	margin: 0.5rem auto;
+	padding: 0;
+	font-size: 0;
+	text-align: center;
+	list-style: none;
+}
+
+.card-container::-webkit-scrollbar { width: 0 !important }
+
+.card-container > span {
+  margin: 16px;
 }
 
 .image-container {
@@ -201,5 +240,12 @@ export default {
   top: 0;
   width: 100%;
   vertical-align: bottom;
+  transition: all 0.3s ease 0s;
+}
+
+.image-container img:hover {
+  transform: scale(1.08);
+  box-shadow: 0 0 3rem -1rem rgba(0, 0, 0, 0.5);
+  z-index: 8;  
 }
 </style>
