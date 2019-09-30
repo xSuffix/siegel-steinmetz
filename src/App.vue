@@ -10,14 +10,14 @@
 
 <script>
 import Header from "@/components/Header.vue";
-import HeaderFixed from "@/components/HeaderFixed.vue";
+// import HeaderFixed from "@/components/HeaderFixed.vue";
 import Footer from "@/components/Footer.vue";
 
 export default {
   name: "App",
   components: {
     Header,
-    HeaderFixed,
+    // HeaderFixed,
     Footer
   },
   data: () => ({
@@ -27,6 +27,16 @@ export default {
 </script>
 
 <style lang="scss">
+.content-wrapper:after {
+  content: '';
+  display: table;
+  clear: both;
+}
+
+.content-wrapper {
+  margin-bottom: 1rem;
+}
+
 .theme--light {
   background-color: white !important;
 }

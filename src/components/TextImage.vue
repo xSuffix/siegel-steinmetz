@@ -1,32 +1,29 @@
 <template>
-  <div class="text-image">
+  <div class="text-image" :class="side">
     <slot/>
   </div>
 </template>
 
 <script>
 export default {
-  name: "TombsOriginal"
+  name: "TombsOriginal",
+  props: {
+    side: String
+  },
+  data() {
+    return {
+      test: "tst"
+    }
+  }
 }
 </script>
 
 <style lang="scss" scoped>
-.text-image {
-  display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
+.right .titled-image {
+  float: right;
 }
 
-.text-image > span {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  max-width: 100%;
-  flex: 0 1 450px
-}
-
-img {
-  max-height: 375px;
-  max-width: 500px;
+.left .titled-image {
+  float: left;
 }
 </style>

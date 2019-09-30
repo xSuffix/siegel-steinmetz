@@ -33,8 +33,8 @@ export default {
       items: [
         { title: 'Dashboard', icon: 'dashboard' },
         { title: 'Account', icon: 'account_box' },
-        { title: 'Admin', icon: 'gavel' },
-      ],
+        { title: 'Admin', icon: 'gavel' }
+      ]
     }
   },
   props: {
@@ -44,7 +44,4 @@ export default {
 </script>
 
 <style scoped>
-.nav-drawer {
-
-}
 </style>

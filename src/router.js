@@ -1,20 +1,27 @@
 import Vue from 'vue'
 
 import Router from 'vue-router'
-import Home from './views/Home.vue'
-import Restorations from './views/Restorations.vue'
-import Tombs from './views/Tombs.vue'
-import About from './views/About.vue'
-import Gallery from './views/Gallery.vue'
-import Contact from './views/Contact.vue'
-import Imprint from './views/Imprint.vue'
-import PrivacyPolicy from './views/PrivacyPolicy.vue'
+const Home = () => import('./views/Home.vue')
+const Restorations = () => import('./views/Restorations.vue')
+const Tombs = () => import('./views/Tombs.vue')
+const About = () => import('./views/About.vue')
+const Gallery = () => import('./views/Gallery.vue')
+const Contact = () => import('./views/Contact.vue')
+const Imprint = () => import('./views/Imprint.vue')
+const PrivacyPolicy = () => import('./views/PrivacyPolicy.vue')
 
 Vue.use(Router)
 
 const router = new Router({
   mode: 'history',
   base: process.env.BASE_URL,
+  scrollBehavior (to, from, savedPosition) {
+    if (savedPosition) {
+      return savedPosition
+    } else {
+      return { x: 0, y: 0 }
+    }
+  },
   routes: [
     {
       path: '/',

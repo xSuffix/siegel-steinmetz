@@ -1,9 +1,11 @@
 <template>
-  <span>
+  <span class="titled-image">
     <figure>
       <img :src="require(`@/assets/img/${image}`)" />
+      <figcaption>
+        <slot />
+      </figcaption>
     </figure>
-    <slot />
   </span>
 </template>
 
@@ -18,11 +20,27 @@ export default {
 </script>
 
 <style scoped>
-span > p {
-  color: #770019;
+@media (min-width: 500px) {
+  .right figure {
+    margin-left: 16px;
+  }
+
+  .left figure {
+    margin-right: 16px;
+  }
+}
+
+
+figcaption {
+  font-style: italic;
 }
 
 img {
   max-width: 100%;
 }
+
+.titled-image {
+  margin-bottom: 1rem;
+}
 </style>
+

@@ -11,15 +11,15 @@
         <router-link to="/kontakt">Kontakt</router-link>
       </span>
       <span>
-        <h3>Weitere Links</h3>
+        <h3>Rechtliches</h3>
         <router-link to="/impressum">Impressum</router-link>
         <router-link to="/datenschutz">Datenschutz</router-link>
       </span>
       <span>
         <h3>Kontakt</h3>
-        <LinkExternal href="tel:+496264926444">
+        <a href="tel:+496264926444">
           <i class="material-icons">phone</i>06264 / 92 64 44
-        </LinkExternal>
+        </a>
         <p>
           Bernd Siegel
           <br />Steingestaltung

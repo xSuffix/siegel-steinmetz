@@ -202,7 +202,7 @@ section {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
-	margin: 0.5rem auto;
+	margin: 0 auto;
 	padding: 0;
 	font-size: 0;
 	text-align: center;

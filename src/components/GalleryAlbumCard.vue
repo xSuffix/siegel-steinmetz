@@ -24,6 +24,7 @@ export default {
 li {
   display: inline-block;
   width: 90%;
+  margin: 1rem 0;
   max-width: 20rem;
   font-size: 1rem;
   text-decoration: none;

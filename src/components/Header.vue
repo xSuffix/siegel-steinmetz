@@ -1,7 +1,7 @@
 <!--Header for each page, includes logo and navigation-->
 <template>
   <div>
-    <header class="document small" :class="{scrolled: this.scrollY > 64}">
+    <header class="document small" :class="{'scrolled': this.scrollY > 64}">
       <Logo />
       <Navigation />
       <Menu @click.native="openNavigation()"/>
@@ -22,8 +22,8 @@
           <v-list-item
             v-for="item in items"
             :key="item.title"
-            link
           >
+          <router-link :to="item.url">
             <v-list-item-icon>
               <v-icon>{{ item.icon }}</v-icon>
             </v-list-item-icon>
@@ -31,6 +31,7 @@
             <v-list-item-content>
               <v-list-item-title>{{ item.title }}</v-list-item-title>
             </v-list-item-content>
+            </router-link>
           </v-list-item>
         </v-list>
       </v-navigation-drawer>
@@ -55,10 +56,14 @@ export default {
       scrollY: 0,
       drawer: false,
       items: [
-        { title: 'Restaurierungen', icon: 'healing' },
-        { title: 'Grabmale', icon: 'subject' },
-        { title: 'Über uns', icon: 'person' },
-      ],
+        { title: 'Restaurierungen', icon: 'subject', url: '/restaurierungen' },
+        { title: 'Grabmale', icon: 'subject', url: '/grabmale' },
+        { title: 'Über uns', icon: 'person', url: '/ueber-uns' },
+        { title: 'Galerie', icon: 'photo_library', url: '/galerie' },
+        { title: 'Kontakt', icon: 'contact_phone', url: '/kontakt' },
+        { title: 'Impressum', icon: 'short_text', url: '/impressum' },
+        { title: 'Datenschutz', icon: 'description', url: '/datenschutz' }
+      ]
     }
   },
   created () {
@@ -69,17 +74,21 @@ export default {
   },
   methods: {
     handleScroll: function() {
-      // console.log(window.scrollY);
       this.scrollY = window.scrollY
     },
     openNavigation: function() {
       this.drawer = !this.drawer;
-    },
+    }
   }
 }
 </script>
 
 <style lang="scss" scoped>
+a {
+  display: inline-flex;
+  color: unset !important;
+}
+
 aside {
   z-index: 1000;
 }
