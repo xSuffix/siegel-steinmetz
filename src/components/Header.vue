@@ -122,7 +122,10 @@ header.scrolled {
   top: 0;
   box-shadow: 0 4px 5px 0 rgba(0,0,0,0.14), 0 1px 10px 0 rgba(0,0,0,0.12), 0 2px 4px -1px rgba(0,0,0,0.20);
   box-shadow: 0px 6px 6px -4px rgba(0, 0, 0, 0.2), 0px 10px 14px 1px rgba(0, 0, 0, 0.14), 0px 4px 18px 3px rgba(0, 0, 0, 0.12);
-  // box-shadow: 0px 0px 4px 0px rgba(0,0,0,0.2);
   box-shadow: 0px 2px 6px 0px rgba(0,0,0,.12);
+}
+
+.logo + .navigation {
+  margin-left: 1rem;
 }
 </style>

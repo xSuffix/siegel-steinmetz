@@ -11,15 +11,16 @@
 
 <script>
 export default {
-  name: 'Navigation'
-}
+  name: "Navigation"
+};
 </script>
 
 <style lang="scss" scoped>
 .navigation {
   display: flex;
   align-items: center;
-  justify-content: space-evenly;
+  justify-content: space-around;
+  // justify-content: space-evenly;
 
   width: 100%;
 }
@@ -41,5 +42,13 @@ a {
   white-space: nowrap;
   margin: 0.5rem 0;
   display: inline-block;
+}
+
+@supports (-ms-accelerator: true) {
+  /* Edge only */
+
+  .navigation {
+    
+  }
 }
 </style>
