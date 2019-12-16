@@ -1,114 +1,32 @@
 <template>
-  <v-app id="app">
-    <Header />
-    <v-content>
-      <router-view />
-    </v-content>
-    <Footer />
-  </v-app>
+  <div id="app">
+    <div id="nav">
+      <router-link to="/">Home</router-link> |
+      <router-link to="/about">About</router-link>
+    </div>
+    <router-view/>
+  </div>
 </template>
 
-<script>
-import Header from "@/components/Header.vue";
-// import HeaderFixed from "@/components/HeaderFixed.vue";
-import Footer from "@/components/Footer.vue";
-
-export default {
-  name: "App",
-  components: {
-    Header,
-    // HeaderFixed,
-    Footer
-  },
-  data: () => ({
-    //
-  })
-};
-</script>
-
 <style lang="scss">
-.content-wrapper:after {
-  content: '';
-  display: table;
-  clear: both;
+#app {
+  font-family: 'Avenir', Helvetica, Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-align: center;
+  color: #2c3e50;
 }
 
-.content-wrapper {
-  margin-bottom: 1rem;
-}
+#nav {
+  padding: 30px;
 
-.theme--light {
-  background-color: white !important;
-}
+  a {
+    font-weight: bold;
+    color: #2c3e50;
 
-$siegel-red: #770019;
-$siegel-lightgray: #d9d9da;
-$siegel-gray: #afafb0;
-
-$light-s2: #3c3c3c;
-
-.siegel-primary {
-  color: #770019 !important;
-}
-
-.bg-lightgray {
-  background-color: $siegel-lightgray;
-}
-
-.material-icons {
-  margin-right: 4px;
-  vertical-align: middle;
-  color: #3c3c3c;
-}
-
-h1 {
-  color: $light-s2;
-  margin-bottom: 0.5rem;
-  display: inline-block;
-  overflow-wrap: break-word;
-  white-space: pre-wrap;
-}
-
-h2 {
-  color: $siegel-red;
-  text-decoration: none;
-  font-size: 1.5rem;
-  font-weight: bold;
-  white-space: nowrap;
-  margin: 0.5rem 0;
-  display: inline-block;
-  overflow-wrap: break-word;
-  white-space: pre-wrap;
-}
-
-p {
-  font-size: 1.1rem;
-  margin: 0 0 0.5rem 0;
-  line-height: 1.5rem;
-  color: #646464;
-}
-
-a {
-  text-decoration: none;
-}
-
-br {
-  margin-bottom: 10px;
-  width: 1px;
-}
-
-.document {
-  width: 100%;
-  max-width: 1180px;
-  margin-left: auto;
-  margin-right: auto;
-  padding: 4px 16px;
-}
-
-.text-logo {
-  color: $light-s2;
-  font-size: 24px;
-  white-space: nowrap;
-  line-height: 1.75rem;
+    &.router-link-exact-active {
+      color: #42b983;
+    }
+  }
 }
 </style>
