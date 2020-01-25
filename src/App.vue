@@ -22,6 +22,7 @@ export default {
 <style lang="scss">
 body {
   margin: 0;
+  --color-primary: #770019;
 }
 
 #app {
