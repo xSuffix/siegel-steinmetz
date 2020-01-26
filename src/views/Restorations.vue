@@ -1,12 +1,14 @@
 <template>
   <div>
-    about
+    restorations
   </div>
 </template>
 
 <script>
+
+
 export default {
-  
+
 }
 </script>
 

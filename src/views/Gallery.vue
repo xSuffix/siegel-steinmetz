@@ -1,12 +1,14 @@
 <template>
   <div>
-    about
+    gallery
   </div>
 </template>
 
 <script>
+
+
 export default {
-  
+
 }
 </script>
 

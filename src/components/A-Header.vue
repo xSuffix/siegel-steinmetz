@@ -1,12 +1,13 @@
 <template>
   <header>
     <nav>
-      <div>
+      <router-link to="/">
         <img src="../assets/favicon.svg" height="80%">
-        <LogoClaim/>
-      </div>
-      
-      
+        <LogoClaim />
+      </router-link>
+      <div>
+        <router-link to="/about">About</router-link>
+      </div>      
     </nav>
   </header>
 </template>
@@ -37,24 +38,26 @@ nav {
   width: 100%;
   position: absolute;
   height: calc(38.4px + 3vw);
-  // height: calc(32px + 5vw);
   max-height: 96px;
-  // max-height: 128px;
   background: rgb(228,229,221,0.75);
   bottom: 0;
   backdrop-filter: blur(6px);
-  padding: 0 5%;
+  padding: 0 4%;
   box-sizing: border-box;
+  user-select: none;
 
-  > div {
+  > a {
     height: 100%;
-    display: flex;
+    box-sizing: content-box;
+    min-width: fit-content;
+    display: inline-flex;
     align-items: center;
+    text-decoration: none;
+    
+    > img {
+      // width: 40%;
+      padding: 0 10%;
+    }
   }
 }
-
-img + .logo-claim {
-  margin-left: 2%;
-}
-
 </style>

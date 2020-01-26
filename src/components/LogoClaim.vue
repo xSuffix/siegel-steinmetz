@@ -25,6 +25,7 @@ span {
   color: #3C3C3C;
   font-size: 24px;
   line-height: 34px;
+  text-decoration: none;
 }
 
 @media screen and (max-width: 1920px) {

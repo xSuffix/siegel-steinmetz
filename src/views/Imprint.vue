@@ -1,12 +1,14 @@
 <template>
   <div>
-    about
+    imprint
   </div>
 </template>
 
 <script>
+
+
 export default {
-  
+
 }
 </script>
 

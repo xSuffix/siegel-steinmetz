@@ -1,12 +1,14 @@
 <template>
   <div>
-    about
+    contact
   </div>
 </template>
 
 <script>
+
+
 export default {
-  
+
 }
 </script>
 

@@ -1,12 +1,14 @@
 <template>
   <div>
-    about
+    policy
   </div>
 </template>
 
 <script>
+
+
 export default {
-  
+
 }
 </script>
 
