@@ -2,7 +2,7 @@
   <header>
     <nav>
       <router-link to="/">
-        <img src="../assets/favicon.svg" height="80%" />
+        <img src="../assets/favicon_padding.svg" height="80%" />
         <LogoClaim />
       </router-link>
       <div>
@@ -48,15 +48,9 @@ nav {
 
   > a {
     height: 100%;
-    min-width: 17.5%;
-    box-sizing: content-box;
     display: inline-flex;
     align-items: center;
     text-decoration: none;
-
-    > img {
-      margin: 0 auto;
-    }
   }
 }
 </style>
